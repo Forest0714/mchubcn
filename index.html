@@ -1,51 +1,44 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>全新方块工坊</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<link rel="canonical" href="https://crmo.cn/">
+<link rel="dns-prefetch" href="//crmo.cn">
+<link rel="preconnect" href="https://crmo.cn" crossorigin>
+<title>正在跳转…</title>
 
-        body {
-            background: #ffffff;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
-            padding: 30px;
-        }
+<!-- ★ 跳转脚本：必须放在所有内容最前面，浏览器一解析到就跳 -->
+<script>
+(function () {
+  var target = "https://crmo.cn/";
+  try {
+    // 用 top 防止页面被别人用 iframe 嵌套后只跳内层
+    (window.top || window).location.replace(target);
+  } catch (e) {
+    // 跨域被拒绝时，退回到跳自己
+    window.location.replace(target);
+  }
+  // 极端兜底：300ms 后若还没走，强制再跳一次
+  setTimeout(function () {
+    if (location.href.indexOf("crmo.cn") === -1) {
+      location.href = target;
+    }
+  }, 300);
+})();
+</script>
 
-        .container {
-            text-align: center;
-        }
+<!-- ★ 无 JS 环境兜底（0 秒刷新） -->
+<meta http-equiv="refresh" content="0;url=https://crmo.cn/">
 
-        .title {
-            font-size: clamp(24px, 5vw, 52px);
-            font-weight: 500;
-            color: #121212;
-            letter-spacing: 0.14em;
-            margin-bottom: clamp(16px, 3vw, 32px);
-        }
-
-        .subtitle {
-            font-size: clamp(17px, 2.8vw, 30px);
-            font-weight: 300;
-            color: #444444;
-            letter-spacing: 0.22em;
-        }
-    </style>
+<style>
+  body{margin:0;height:100vh;display:flex;align-items:center;justify-content:center;
+       font:14px/1.6 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;color:#666}
+  a{color:#1a73e8}
+</style>
 </head>
 <body>
-    <div class="container">
-        <div class="title">全新方块工坊即将呈现</div>
-        <div class="subtitle">美好的事情即将发生</div>
-    </div>
+  <p>正在跳转，请稍候… 如果没有自动跳转，请 <a href="https://crmo.cn/">点击这里</a></p>
 </body>
 </html>
